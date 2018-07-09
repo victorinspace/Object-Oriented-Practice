@@ -36,9 +36,31 @@ function expect(target) {
 //
 // Only add code to *THIS* section!
 
-// ????????
-// ????????
-// ????????
+function Dog(status, color, hungry) {
+  this.status = 'normal'
+  this.color = 'black'
+  this.hungry = hungry
+}
+
+function Human(cool, pet) {
+  this.cool = cool
+}
+
+Human.prototype.pet = function() {
+  sadie.status = 'happy'
+  sadie.hungry = false
+  moonshine.hungry = true
+}
+
+Human.prototype.feed = function() {
+  moonshine.hungry = false
+  julia.cool = true
+  mason.cool = false
+}
+
+// Dog.prototype.hungry = function() {
+//   this.hungry = !hungry
+// }
 
 
 //        __
